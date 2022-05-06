@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding: 10px 120px 10px;
+    color: #000;
+    font-size: 18px;
+}
+
+.navbar li {
+    list-style: none;
+    display: inline;
+}
+
+.nav_left {
+    display: flex;
+    align-items: center;
+}
+
+.nav_logo img{
+    padding-right: 10px;
+}
+
+.nav_right {
+    display: flex;
+    align-items: center;
+}
+
+.nav_right li, .nav_left li {
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+li a {
+    color: #000;
+    text-decoration: none;
+}
+
+button {
+    padding: 10px 30px;
+    border: 1px solid #000;
+    border-radius: 48px;
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.header_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding: 30px 120px 5px;
+}
+
+.header_icon {
+    display: flex;
+    align-items: center;
+}
+
+.header_icon i {
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 5px 8px;
+}
+
+.header_icon p {
+    font-size: 16px;
+    padding: 0px 10px;
+}
+
+.header_text h1{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.header_img {
+    width: 500px;
+}
+
+.header_img img {
+    width: 100%;
+}
+
+.header_text img {
+    width: 150px;
+    padding: 0 0 5px;
+} 
+
+.nav_left i {
+    display: none;
+}
+
+.advantages_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 120px 5px;
+}
+
+.wrap {
+    flex-wrap: wrap-reverse;
+}
+
+.advantages_img {
+    width: 500px;
+}
+
+.advantages_img img {
+    width: 100%;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 400;
+    padding: 5px 0;
+}
+
+p {
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.parthers_main {
+    padding: 150px 120px 5px;
+}
+
+.parthers_text {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.parthers_logo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.parthers_logo img {
+    width: 210px;
+}
+
+.advantages_text a{
+    margin: 0 10px 0 0;
+    width: 70px;
+}
+
+.advantages_text .download {
+    width: 150px;
+    padding: 20px 10px 10px 0;
+}
+
+hr {
+    margin: 50px 120px 0px;
+    border-bottom: none;
+}
+
+.footer_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 30px 120px 0px;
+}
+
+.footer_list li {
+    list-style: none;
+    line-height: 2.5;
+    font-size: 14px;
+}
+
+.footer_list p {
+    font-size: 18px;
+}
+
+.footer_list i {
+    border: 2px solid black;
+    padding: 8px 10px;
+}
+
+.footer_end {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding: 50px 120px 10px;
+}
+
+.footer_text p {
+    font-size: 10px;
+    color: #AAAAAA;
+}
+
+@media screen and (max-width: 480px) {
+    .nav_left i {
+        display: block;
+    }
+
+    .nav_left ul, .nav_right ul{
+        display: none;
+    }
+
+    .navbar {
+        padding: 10px 20px 5px;
+    }
+
+    .nav_right button {
+        display: none;
+    }
+
+    .nav_left{ 
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .header_main {
+        padding: 50px 20px 5px;
+    }
+
+    .header_text h1 {
+        font-size: 35px;
+    }
+
+    .advantages_main {
+        padding: 50px 20px 5px;
+    }
+
+    .advantages_img img {
+        padding: 20px;
+    }
+
+    .parthers_main {
+        padding: 50px 20px 5px;  
+    }
+
+    .parthers_logo {
+        justify-content: center;
+    }
+
+    hr {
+        margin: 20px 20px 0;
+    }
+
+    .footer_main {
+        padding: 30px 20px 5px;
+    }
+
+    .footer_list {
+        width: 50%;
+    }
+
+    .footer_list p {
+        margin: 15px 0;
+    }
+
+    .footer_end {
+        padding: 50px 20px 5px;
+    }
+}
